@@ -3,8 +3,8 @@ session_start();
 include("include/function.php");
 include("include/config.php");
 include("include/lang.php");
-if (!isset($_SESSION['user'])){header("Location: ".$home_path;);}
-
+if (!isset($_SESSION['user'])){header("Location: ".$home_path);}
+$
 
 
 ?>
