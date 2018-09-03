@@ -10,11 +10,12 @@ $query = $bdd->prepare("select * from user where user=? and pass=?");
 $query-> execute(array($user,$pass));
 if ($query->rowCount()){
 $fetch = $query->fetch(PDO::FETCH_ASSOC);
-$_SESSION['user']=$fetch['user'];} else {echo error("sai pass");}
+$_SESSION['user']=$fetch['user'];
+header("Location: $home_path");} else {echo error("sai pass");}
 }
 
 
-if (isset($_SESSION['user'])){ header("Location: $home_patch");} ?>
+if (isset($_SESSION['user'])){ header("Location: $home_path");} ?>
 
 <!DOCTYPE html>
 <html lang="en">
