@@ -66,7 +66,7 @@ if (isset($_SESSION['user'])){ header("Location: $home_path");} ?>
               </div>
               <div class="row">
                 <div class="col-6">
-                  <button type="submit" class="btn btn-primary px-4">Login</button>
+                  <button type="submit" name="submit" value="submit" class="btn btn-primary px-4">Login</button>
                 </div>
                 
               </div>
