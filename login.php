@@ -62,7 +62,7 @@ if (isset($_SESSION['user'])){ header("Location: $home_patch");} ?>
                         <span class="help-block">Password</span>
                       </div>
                     </div>
-          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Login</button>
+          <button type="submit" name="submit" value="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Login</button>
                   </form>
 
               </div>
