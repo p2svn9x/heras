@@ -2,7 +2,7 @@
 session_start();
 include("include/config.php");
 include("include/lang.php");
-include("inclde/function.php");
+include("include/function.php");
 if(isset($_POST['submit'])){
 $user = $_POST['user'];
 $pass = md5($_POST['pass']);
