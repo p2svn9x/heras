@@ -49,20 +49,28 @@ if (isset($_SESSION['user'])){ header("Location: $home_path");} ?>
           <div class="card p-4">
             <div class="card-body">
 <form action="" method="post" class="form-horizontal">
-                    <div class="form-group row">
-                      <label class="col-md-3 col-form-label" for="hf-email">user</label>
-                      <div class="col-md-9">
-                        <input type="text" name="user" class="form-control" placeholder="user..">
-                        <span class="help-block">User</span>
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-md-3 col-form-label" for="hf-password">Password</label>
-                      <div class="col-md-9">
-                        <input type="password" id="hf-password" name="pass" class="form-control" placeholder="Password..">
-                        <span class="help-block">Password</span>
-                      </div>
-                    </div>
+                    <div class="card-body">
+              <h1>Login</h1>
+              <p class="text-muted">Sign In</p>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" name="user" class="form-control" placeholder="Username">
+              </div>
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-lock"></i></span>
+                </div>
+                <input type="password" name="pass" class="form-control" placeholder="Password">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button type="submit" class="btn btn-primary px-4">Login</button>
+                </div>
+                
+              </div>
+            </div>
           <button type="submit" name="submit" value="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Login</button>
                   </form>
 
