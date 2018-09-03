@@ -10,7 +10,7 @@ $query = $bdd->prepare("select * from user where user=? and pass=?");
 $query-> execute(array($user,$pass));
 if ($query->rowCount()){
 $fetch = $query->fetch(PDO::FETCH_ASSOC);
-$_SESSION['user']=$fetch['user'];} else {error("sai pass");}
+$_SESSION['user']=$fetch['user'];} else {echo error("sai pass");}
 }
 
 
