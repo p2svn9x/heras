@@ -1,7 +1,7 @@
 <?php
 $login_path="login.php";
 $home_path="index.php";
-$card_path="card.php";
+$card_path="cc.php";
 $bin_path="bin.php";
 $dump_path="dump.php";
 $dumpformat_path="dump_format.php";
